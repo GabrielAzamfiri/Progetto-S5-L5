@@ -235,3 +235,29 @@ aside h3 {
   color: rgb(152, 152, 152);
   cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+  nav,
+  .curious,
+  #mainTrendingContainer,
+  #altriArticoli {
+    width: 90%;
+    margin: auto;
+  }
+
+  .trending {
+    width: 45%;
+    gap: 1rem;
+  }
+  #altriArticoli {
+    display: flex;
+    flex-direction: column;
+  }
+  article,
+  .aside {
+    width: 90%;
+    margin: auto;
+  }
+  .matters {
+    order: -1;
+  }
+}
