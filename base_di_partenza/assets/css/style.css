@@ -14,8 +14,10 @@ header {
   cursor: pointer;
 }
 nav,
-.curious {
-  width: 70%;
+.curious,
+#mainTrendingContainer,
+#altriArticoli {
+  width: 80%;
   margin: auto;
 }
 
@@ -63,4 +65,103 @@ h1 {
 .curious button {
   width: 9rem;
   font-size: 0.9rem;
+}
+
+/* **************************Trending********************** */
+main {
+  border-top: 1px solid black;
+  font-family: "Roboto", "Helvetica Neue";
+}
+#medium {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.trendingContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.trending {
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+}
+.trending span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(233, 229, 229);
+}
+.trendingInfo p img {
+  border-radius: 50%;
+  width: 1.2rem;
+}
+
+.trendingAutor,
+.trendingData,
+.articleAutor {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.trendingAutor,
+.articleAutor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trendingnews {
+  font-weight: 800;
+  padding-block: 0.8rem;
+}
+.trendingData,
+.articleInfo,
+.articleData {
+  color: rgb(152, 152, 152);
+}
+.stellina {
+  vertical-align: -4px;
+}
+#mainTrendingContainer {
+  margin-bottom: 3rem;
+}
+/* **************************Altri Articoli********************** */
+
+section {
+  margin-block: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid rgb(244, 241, 241);
+}
+.articleNews {
+  font-weight: 800;
+  font-size: 1.3rem;
+  padding-block: 0.8rem;
+}
+.articleInfo {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.articleData {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.trendingInfo a {
+  text-decoration: none;
+  background-color: rgb(245, 245, 245);
+  padding: 0.3rem 0.5rem;
+  border-radius: 20px;
+  color: rgb(152, 152, 152);
+  cursor: pointer;
+}
+.articolo {
+  display: flex;
+}
+article {
+  width: 60%;
+}
+.articolo img {
+  width: 25%;
 }
