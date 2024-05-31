@@ -64,14 +64,19 @@ h1 {
 .curious {
   padding-top: 8rem;
   padding-bottom: 4rem;
-
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-left: 10%;
 }
 .curious button {
   width: 9rem;
   font-size: 0.9rem;
+}
+
+.sectionCurious {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* **************************Trending********************** */
@@ -273,6 +278,9 @@ aside h3 {
   .matters a {
     font-size: 0.8£rem;
   }
+  .curious {
+    margin-left: 2.5%;
+  }
 }
 @media screen and (max-width: 575px) {
   nav,
@@ -281,6 +289,9 @@ aside h3 {
   #altriArticoli {
     width: 95%;
     margin: auto;
+  }
+  .curious {
+    margin-left: 2.5%;
   }
   .trending {
     width: 95%;
