@@ -1,0 +1,66 @@
+*,
+:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Spectral", serif;
+}
+header {
+  background-color: #ffc017;
+}
+.logo {
+  cursor: pointer;
+}
+nav,
+.curious {
+  width: 70%;
+  margin: auto;
+}
+
+.navBar nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navBar nav ul {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+.navBar nav ul li {
+  cursor: pointer;
+}
+button {
+  background-color: black;
+  color: white;
+  width: 6rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.navBar {
+  border-bottom: 1px solid black;
+}
+/* **************************Curious********************** */
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.curious {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.curious button {
+  width: 9rem;
+  font-size: 0.9rem;
+}
