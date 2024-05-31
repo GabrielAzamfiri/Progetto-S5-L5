@@ -240,7 +240,7 @@ aside h3 {
   .curious,
   #mainTrendingContainer,
   #altriArticoli {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
   section {
@@ -284,5 +284,8 @@ aside h3 {
   }
   .trending {
     width: 95%;
+  }
+  .navBar ul li:not(:last-of-type) {
+    display: none;
   }
 }
