@@ -243,7 +243,11 @@ aside h3 {
     width: 90%;
     margin: auto;
   }
-
+  section {
+    margin-block: 3rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgb(244, 241, 241);
+  }
   .trending {
     width: 45%;
     gap: 1rem;
@@ -252,16 +256,33 @@ aside h3 {
     display: flex;
     flex-direction: column;
   }
+  .articolo img {
+    margin-left: 1rem;
+  }
   article,
   aside {
     width: 90%;
     margin: auto;
   }
-  .aiuto {
-    display: none;
-  }
+
   aside {
     order: -1;
     margin-bottom: 3rem;
+  }
+  .aiuto a,
+  .matters a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  nav,
+  .curious,
+  #mainTrendingContainer,
+  #altriArticoli {
+    width: 95%;
+    margin: auto;
+  }
+  .trending {
+    width: 95%;
   }
 }
