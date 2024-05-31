@@ -253,11 +253,15 @@ aside h3 {
     flex-direction: column;
   }
   article,
-  .aside {
+  aside {
     width: 90%;
     margin: auto;
   }
-  .matters {
+  .aiuto {
+    display: none;
+  }
+  aside {
     order: -1;
+    margin-bottom: 3rem;
   }
 }
