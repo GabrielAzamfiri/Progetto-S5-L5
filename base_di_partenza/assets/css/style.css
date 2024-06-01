@@ -9,14 +9,16 @@ body {
 }
 header {
   background-color: #ffc017;
+  position: relative;
+  overflow: hidden;
 }
 .logo {
   cursor: pointer;
 }
 nav,
-.curious,
 #mainTrendingContainer,
-#altriArticoli {
+#altriArticoli,
+.contenitoreCurious {
   width: 70%;
   margin: auto;
 }
@@ -105,7 +107,7 @@ button {
 .aminationToBlack {
   animation: cambioToBlack 0.4s forwards;
 }
-/* **************************Curious********************** */
+/* **************************sectionCurious********************** */
 h1 {
   font-size: 4rem;
   font-weight: 500;
@@ -117,6 +119,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-width: 390px;
+  justify-content: center;
 }
 .curious button {
   width: 9rem;
@@ -125,7 +129,13 @@ h1 {
 
 .sectionCurious {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: end;
+}
+
+.contenitoreCurious .svg {
+  position: absolute;
+  right: -3rem;
+  top: 0;
 }
 
 /* **************************Trending********************** */
@@ -292,9 +302,9 @@ aside h3 {
 }
 @media screen and (max-width: 1200px) {
   nav,
-  .curious,
   #mainTrendingContainer,
-  #altriArticoli {
+  #altriArticoli,
+  .contenitoreCurious {
     width: 95%;
     margin: auto;
   }
@@ -328,25 +338,57 @@ aside h3 {
   .matters a {
     font-size: 0.8£rem;
   }
-  .curious {
-    margin-left: 2.5%;
+  .contenitoreCurious .svg {
+    right: -6rem;
   }
 }
+/* ***************************@media svg M********************************** */
+/* @media screen and (max-width: 1000px) {
+  .contenitoreCurious .svg {
+    right: -10rem;
+  }
+} */
+/* @media screen and (max-width: 830px) {
+  .contenitoreCurious .svg {
+    right: -12rem;
+  }
+} */
+@media screen and (max-width: 790px) {
+  .contenitoreCurious .svg {
+    right: -10rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contenitoreCurious .svg {
+    right: -13rem;
+  }
+}
+@media screen and (max-width: 665px) {
+  .contenitoreCurious .svg {
+    right: -15rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .contenitoreCurious .svg {
+    right: -19rem;
+  }
+}
+/* ************************************************************** */
 @media screen and (max-width: 575px) {
   nav,
-  .curious,
   #mainTrendingContainer,
   #altriArticoli {
     width: 95%;
     margin: auto;
   }
-  .curious {
-    margin-left: 2.5%;
-  }
+
   .trending {
     width: 95%;
   }
   .navBar ul li:not(:last-of-type) {
+    display: none;
+  }
+  .contenitoreCurious .svg {
     display: none;
   }
 }

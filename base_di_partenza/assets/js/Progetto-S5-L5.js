@@ -17,3 +17,17 @@ window.onscroll = function () {
     document.querySelector(".navBar button").classList.add("aminationToBlack");
   }
 };
+
+const m = document.getElementsByTagName("g");
+const arrayM = [...m];
+const arrayMzero = arrayM.filter((element) => element.getAttribute("opacity") === "0");
+console.log(arrayMzero.length);
+const functionM = setInterval(() => {
+  const random = Math.floor(Math.random() * arrayMzero.length);
+
+  if (arrayMzero[random].getAttribute("opacity") === "0") {
+    arrayMzero[random].setAttribute("opacity", 1);
+  } else {
+    arrayMzero[random].setAttribute("opacity", 0);
+  }
+}, 20);
