@@ -17,7 +17,7 @@ nav,
 .curious,
 #mainTrendingContainer,
 #altriArticoli {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -54,7 +54,57 @@ button {
   position: fixed;
   z-index: 9;
 }
+@keyframes cambioToWhite {
+  from {
+    background-color: #ffc017;
+  }
 
+  to {
+    background-color: white;
+  }
+}
+@keyframes cambioToGreen {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: green;
+  }
+}
+.animationToWhite {
+  animation: cambioToWhite 0.4s forwards;
+}
+.aminationToGreen {
+  animation: cambioToGreen 0.4s forwards;
+}
+
+/* **************************************************** */
+
+@keyframes cambioToSenape {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: #ffc017;
+  }
+}
+@keyframes cambioToBlack {
+  from {
+    background-color: green;
+  }
+
+  to {
+    background-color: black;
+  }
+}
+.animationToSenape {
+  animation: cambioToSenape 0.4s forwards;
+}
+.aminationToBlack {
+  animation: cambioToBlack 0.4s forwards;
+}
 /* **************************Curious********************** */
 h1 {
   font-size: 4rem;
@@ -67,7 +117,6 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-left: 10%;
 }
 .curious button {
   width: 9rem;
@@ -96,7 +145,8 @@ main {
 .trendingContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  justify-content: space-between;
+  row-gap: 2rem;
 }
 .trending {
   display: flex;
